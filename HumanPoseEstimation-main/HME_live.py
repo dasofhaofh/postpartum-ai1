@@ -34,7 +34,7 @@ with st.sidebar:
     4. 点击「捕捉并分析」按钮，系统将检测你的身体姿态。
     5. 检测结果会在右侧显示。
     """)
-    st.info("💡 提示：建议穿紧身或浅色衣物，背景简洁，光线充足。")
+    st.info("提示：建议穿紧身或浅色衣物，背景简洁，光线充足。")
 
 # 摄像头输入
 camera_image = st.camera_input("拍照分析", key="pose_camera")
@@ -60,4 +60,4 @@ if camera_image is not None:
 
     st.image(annotated_image, caption="姿态分析结果", use_container_width=True)
 else:
-    st.info("👈 请点击左侧「开始摄像头」按钮并拍照分析。")
+    st.info("请点击左侧「开始摄像头」按钮并拍照分析。")
